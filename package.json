@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.10",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.15.0",
+    "sqlite3": "^5.0.2"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
