@@ -9,7 +9,8 @@ const orderRoutes = require('./api/routes/orders')
 
 mongoose.connect('mongodb+srv://vinicius:' + process.env.MONGO_ATLAS_PW + '@cluster0.nhixq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 
-app.use(morgan('dev'))+ process.env.MONGO_ATLAS_PW +
+app.use(morgan('dev')) + process.env.MONGO_ATLAS_PW
+app.use('/uploads', express.static('uploads'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
